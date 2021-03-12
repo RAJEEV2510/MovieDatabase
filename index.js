@@ -40,7 +40,8 @@ app.get('/moviesdata',(req,res)=>{
         res.status(200).json(data)
     })
 })
+const port = process.env.PORT || 3000;
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('server is running on 3000')
 })
